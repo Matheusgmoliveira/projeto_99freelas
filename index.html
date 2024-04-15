@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/main.css">
+    <title>Tela de pagamento</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <section class="pagamento">
+        <div class="container">
+            <div class="content">
+                <div class="cadastro-cliente">
+                    <div class="payment-select">
+                        <div class="commands-fields-customers">
+                            <label for="">Cliente</label>
+                            <div class="app-search">
+                                <input type="text" name="" class="input" placeholder="Buscar por nome">
+                            </div>
+                            <div id="pet">
+                                <label for="">Pet</label>
+                                <i><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.99768 14C5.37822 13.9995 3.80905 13.4374 2.55752 12.4097C1.306 11.3819 0.449546 9.95196 0.134094 8.36352C-0.181357 6.77508 0.0637082 5.12641 0.827536 3.6984C1.59136 2.27039 2.8267 1.1514 4.32305 0.532086C5.81941 -0.0872293 7.48421 -0.168553 9.03381 0.30197C10.5834 0.772494 11.9219 1.76575 12.8213 3.11252C13.7207 4.45928 14.1252 6.07622 13.9661 7.68784C13.807 9.29946 13.094 10.806 11.9486 11.9509C11.2983 12.6008 10.5264 13.1163 9.67695 13.4679C8.82746 13.8195 7.91704 14.0003 6.99768 14ZM6.99768 1.27273C5.67258 1.27156 4.38808 1.72991 3.36305 2.56968C2.33803 3.40944 1.63591 4.57865 1.37633 5.87808C1.11676 7.1775 1.31579 8.52673 1.93952 9.69586C2.56325 10.865 3.57308 11.7816 4.79693 12.2897C6.02078 12.7977 7.38291 12.8656 8.65123 12.4818C9.91954 12.0981 11.0156 11.2864 11.7525 10.1852C12.4894 9.0839 12.8217 7.76116 12.6927 6.44236C12.5637 5.12356 11.9813 3.8903 11.0449 2.95273C10.5147 2.41933 9.88401 1.99625 9.18935 1.7079C8.49469 1.41955 7.7498 1.27165 6.99768 1.27273ZM10.5995 6.36364H7.63404V3.39818C7.63404 3.22941 7.56699 3.06755 7.44765 2.94821C7.32831 2.82886 7.16645 2.76182 6.99768 2.76182C6.8289 2.76182 6.66704 2.82886 6.5477 2.94821C6.42836 3.06755 6.36131 3.22941 6.36131 3.39818V6.36364H3.39586C3.22709 6.36364 3.06523 6.43068 2.94589 6.55002C2.82655 6.66936 2.7595 6.83123 2.7595 7C2.7595 7.16877 2.82655 7.33064 2.94589 7.44998C3.06523 7.56932 3.22709 7.63636 3.39586 7.63636H6.36131V10.6018C6.36131 10.7706 6.42836 10.9325 6.5477 11.0518C6.66704 11.1711 6.8289 11.2382 6.99768 11.2382C7.16645 11.2382 7.32831 11.1711 7.44765 11.0518C7.56699 10.9325 7.63404 10.7706 7.63404 10.6018V7.63636H10.5995C10.7683 7.63636 10.9301 7.56932 11.0495 7.44998C11.1688 7.33064 11.2359 7.16877 11.2359 7C11.2359 6.83123 11.1688 6.66936 11.0495 6.55002C10.9301 6.43068 10.7683 6.36364 10.5995 6.36364Z"
+                                            fill="#33C899" />
+                                    </svg>
+                                </i>
+                            </div>
+                            <div class="app-search">
+                                <input type="text" name="" class="input" placeholder="Buscar por nome">
+                            </div>
+                            <div class="payment">
+                                <form action="" class="payment-form">
+                                    <input type="checkbox" name="" id="pagamento-antecipado">
+                                    <label for="pagamento-antecipado"> Pagamento antecipado?</label>
+                                    <div class="tipo-pagamento" id="tipo-pagamento">
+                                        <label for="" id="forma-pagamento">Tipo do pagamento</label>
+                                        <div id="select-buttons">
+                                            <div class="selected-value">Selecione</div>
+                                            <div class="chevrons">
+                                                <i class="chevron-down" data-lucide="chevron-down"></i>
+                                                <i class="chevron-up" data-lucide="chevron-up"></i>
+                                            </div>
+                                        </div>
+                                        <div class="select-form"> <!-- Movido para dentro do contêiner pai -->
+                                            <ul id="option">
+                                                <li class="option-item option-item-selecione">
+                                                    <span id="selecione">Selecione</span>
+                                                </li>
+                                                <li id="pix" class="option-item">
+                                                    <span>Pix</span>
+                                                </li>
+                                                <li id="credit" class="option-item">
+                                                    <span>Cartão de Crédito</span>
+                                                </li>
+                                                <li id="debit" class="option-item">
+                                                    <span>Cartão de Débito</span>
+                                                </li>
+                                                <li id="money" class="option-item">
+                                                    <span>Dinheiro</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="valor-recebido">
+                                <label for="" id="valor">Valor recebido</label>
+                                <input type="text" name="" id="digite" placeholder=" R$ 0,00">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comanda-content">
+
+                    <img src="/images/0435330d0989346ad45ae93348480d50.png" alt="">
+                    <div class="comanda-details">
+                        <ul class="topico">
+                            <li>
+                                <p>Nome</p>
+                                <span>Pit</span>
+                            </li>
+                            <li>
+                                <p>Data de atendimento</p>
+                                <span>20/04/2024 as 19:00</span>
+                            </li>
+                            <li>
+                                <p>Total</p>
+                                <span>120,00</span>
+                            </li>
+                            <li>
+                                <i class="chevron-down-comanda" data-lucide="chevron-down"></i>
+                            </li>
+                            <li>
+                                <i class="chevron-up-comanda" data-lucide="chevron-up"></i>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                    <div class="comanda-info">
+                        <div class="servicos">
+                            <div class="topico-b-info">
+                                <ul class="topico-b">
+                                    <li>
+                                        <img src="/images/0435330d0989346ad45ae93348480d50.png" alt="">
+                                    </li>
+                                    <li>
+                                        <p>Nome</p>
+                                        <span>Pit</span>
+                                    </li>
+                                    <li>
+                                        <p>Data de atendimento</p>
+                                        <span>20/04/2024 as 19:00</span>
+                                    </li>
+                                    <li>
+                                        <p>Total</p>
+                                        <span>120,00</span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="label-profissional">
+                                <label>Profissional</label>
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.99801 12C4.6099 11.9995 3.2649 11.5178 2.19216 10.6368C1.11943 9.7559 0.385325 8.53025 0.114938 7.16873C-0.155449 5.80721 0.054607 4.39406 0.709316 3.17006C1.36403 1.94605 2.42288 0.986916 3.70547 0.456074C4.98807 -0.074768 6.41504 -0.144474 7.74326 0.258832C9.07149 0.662138 10.2188 1.5135 10.9897 2.66787C11.7606 3.82224 12.1074 5.20819 11.971 6.58958C11.8346 7.97097 11.2234 9.26233 10.2416 10.2436C9.68429 10.8007 9.02265 11.2426 8.29453 11.5439C7.5664 11.8453 6.78604 12.0003 5.99801 12ZM5.99801 1.09091C4.86221 1.08991 3.76121 1.48278 2.88262 2.20258C2.00402 2.92238 1.40221 3.92456 1.17971 5.03835C0.957222 6.15215 1.12782 7.30863 1.66245 8.31073C2.19708 9.31284 3.06264 10.0986 4.11165 10.534C5.16067 10.9694 6.32821 11.0277 7.41534 10.6987C8.50247 10.3698 9.4419 9.6741 10.0736 8.73015C10.7052 7.7862 10.99 6.65242 10.8794 5.52202C10.7689 4.39162 10.2697 3.33454 9.46709 2.53091C9.01258 2.07371 8.47201 1.71107 7.87659 1.46392C7.28117 1.21676 6.64269 1.08999 5.99801 1.09091ZM9.08528 5.45455H6.54346V2.91273C6.54346 2.76806 6.48599 2.62933 6.3837 2.52703C6.28141 2.42474 6.14267 2.36727 5.99801 2.36727C5.85334 2.36727 5.71461 2.42474 5.61231 2.52703C5.51002 2.62933 5.45255 2.76806 5.45255 2.91273V5.45455H2.91074C2.76608 5.45455 2.62734 5.51201 2.52505 5.61431C2.42275 5.7166 2.36529 5.85534 2.36529 6C2.36529 6.14466 2.42275 6.2834 2.52505 6.38569C2.62734 6.48799 2.76608 6.54545 2.91074 6.54545H5.45255V9.08727C5.45255 9.23194 5.51002 9.37068 5.61231 9.47297C5.71461 9.57526 5.85334 9.63273 5.99801 9.63273C6.14267 9.63273 6.28141 9.57526 6.3837 9.47297C6.48599 9.37068 6.54346 9.23194 6.54346 9.08727V6.54545H9.08528C9.22994 6.54545 9.36868 6.48799 9.47097 6.38569C9.57326 6.2834 9.63073 6.14466 9.63073 6C9.63073 5.85534 9.57326 5.7166 9.47097 5.61431C9.36868 5.51201 9.22994 5.45455 9.08528 5.45455Z"
+                                        fill="#33C899" />
+                                </svg>
+
+                            </div>
+
+                            <div class="nome-profissional">
+                                <input type="text" name="" id="input-profissional" placeholder="Profissional">
+                            </div>
+                            <div class="label-servico">
+                                <label for="">Serviços</label>
+                            </div>
+                            <div class="nome-servico">
+                                <input type="text" name="" id="input-servicos" placeholder="Serviços">
+                            </div>
+                            <div class="label-descricao-servico">
+                                <label for="">Descricao do Serviço</label>
+                                <span>Valor</span>
+                            </div>
+                            <div class="label-tipo-servico">
+                                <div class="servico-container">
+                                    </span>
+                                    <label for="">Taxi</label>
+                                    <span class="valor-servico" data-valor="60">R$60,00
+                                        <i class="apaga-valor"><svg width="12" height="13" viewBox="0 0 12 13"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.3333 3.25H0.666667C0.489856 3.25 0.320286 3.31848 0.195262 3.44038C0.0702379 3.56228 0 3.72761 0 3.9C0 4.07239 0.0702379 4.23772 0.195262 4.35962C0.320286 4.48152 0.489856 4.55 0.666667 4.55H1.33333V9.1C1.33333 10.1343 1.75476 11.1263 2.50491 11.8577C3.25505 12.5891 4.27247 13 5.33333 13H6.66667C7.72753 13 8.74495 12.5891 9.49509 11.8577C10.2452 11.1263 10.6667 10.1343 10.6667 9.1V4.55H11.3333C11.5101 4.55 11.6797 4.48152 11.8047 4.35962C11.9298 4.23772 12 4.07239 12 3.9C12 3.72761 11.9298 3.56228 11.8047 3.44038C11.6797 3.31848 11.5101 3.25 11.3333 3.25ZM9.33333 9.1C9.33333 9.78956 9.05238 10.4509 8.55229 10.9385C8.05219 11.4261 7.37391 11.7 6.66667 11.7H5.33333C4.62609 11.7 3.94781 11.4261 3.44772 10.9385C2.94762 10.4509 2.66667 9.78956 2.66667 9.1V4.55H9.33333V9.1ZM7.33333 2.6C7.15652 2.6 6.98695 2.53152 6.86193 2.40962C6.73691 2.28772 6.66667 2.12239 6.66667 1.95C6.66667 1.77761 6.59643 1.61228 6.4714 1.49038C6.34638 1.36848 6.17681 1.3 6 1.3C5.82319 1.3 5.65362 1.36848 5.5286 1.49038C5.40357 1.61228 5.33333 1.77761 5.33333 1.95C5.33333 2.12239 5.2631 2.28772 5.13807 2.40962C5.01305 2.53152 4.84348 2.6 4.66667 2.6C4.48986 2.6 4.32029 2.53152 4.19526 2.40962C4.07024 2.28772 4 2.12239 4 1.95C4 1.43283 4.21071 0.936838 4.58579 0.571142C4.96086 0.205446 5.46957 0 6 0C6.53043 0 7.03914 0.205446 7.41421 0.571142C7.78929 0.936838 8 1.43283 8 1.95C8 2.12239 7.92976 2.28772 7.80474 2.40962C7.67971 2.53152 7.51015 2.6 7.33333 2.6ZM4.66667 9.75C4.48986 9.75 4.32029 9.68152 4.19526 9.55962C4.07024 9.43772 4 9.27239 4 9.1V7.15C4 6.97761 4.07024 6.81228 4.19526 6.69038C4.32029 6.56848 4.48986 6.5 4.66667 6.5C4.84348 6.5 5.01305 6.56848 5.13807 6.69038C5.2631 6.81228 5.33333 6.97761 5.33333 7.15V9.1C5.33333 9.27239 5.2631 9.43772 5.13807 9.55962C5.01305 9.68152 4.84348 9.75 4.66667 9.75ZM7.33333 9.75C7.15652 9.75 6.98695 9.68152 6.86193 9.55962C6.73691 9.43772 6.66667 9.27239 6.66667 9.1V7.15C6.66667 6.97761 6.73691 6.81228 6.86193 6.69038C6.98695 6.56848 7.15652 6.5 7.33333 6.5C7.51015 6.5 7.67971 6.56848 7.80474 6.69038C7.92976 6.81228 8 6.97761 8 7.15V9.1C8 9.27239 7.92976 9.43772 7.80474 9.55962C7.67971 9.68152 7.51015 9.75 7.33333 9.75Z"
+                                                    fill="black" />
+                                            </svg></i>
+                                    </span>
+                                </div>
+                                <div class="servico-container">
+                                    </span>
+                                    <label for="">Banho e tosa</label>
+                                    <span class="valor-servico" data-valor="100">R$100,00
+                                        <i class="apaga-valor"><svg width="12" height="13" viewBox="0 0 12 13"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.3333 3.25H0.666667C0.489856 3.25 0.320286 3.31848 0.195262 3.44038C0.0702379 3.56228 0 3.72761 0 3.9C0 4.07239 0.0702379 4.23772 0.195262 4.35962C0.320286 4.48152 0.489856 4.55 0.666667 4.55H1.33333V9.1C1.33333 10.1343 1.75476 11.1263 2.50491 11.8577C3.25505 12.5891 4.27247 13 5.33333 13H6.66667C7.72753 13 8.74495 12.5891 9.49509 11.8577C10.2452 11.1263 10.6667 10.1343 10.6667 9.1V4.55H11.3333C11.5101 4.55 11.6797 4.48152 11.8047 4.35962C11.9298 4.23772 12 4.07239 12 3.9C12 3.72761 11.9298 3.56228 11.8047 3.44038C11.6797 3.31848 11.5101 3.25 11.3333 3.25ZM9.33333 9.1C9.33333 9.78956 9.05238 10.4509 8.55229 10.9385C8.05219 11.4261 7.37391 11.7 6.66667 11.7H5.33333C4.62609 11.7 3.94781 11.4261 3.44772 10.9385C2.94762 10.4509 2.66667 9.78956 2.66667 9.1V4.55H9.33333V9.1ZM7.33333 2.6C7.15652 2.6 6.98695 2.53152 6.86193 2.40962C6.73691 2.28772 6.66667 2.12239 6.66667 1.95C6.66667 1.77761 6.59643 1.61228 6.4714 1.49038C6.34638 1.36848 6.17681 1.3 6 1.3C5.82319 1.3 5.65362 1.36848 5.5286 1.49038C5.40357 1.61228 5.33333 1.77761 5.33333 1.95C5.33333 2.12239 5.2631 2.28772 5.13807 2.40962C5.01305 2.53152 4.84348 2.6 4.66667 2.6C4.48986 2.6 4.32029 2.53152 4.19526 2.40962C4.07024 2.28772 4 2.12239 4 1.95C4 1.43283 4.21071 0.936838 4.58579 0.571142C4.96086 0.205446 5.46957 0 6 0C6.53043 0 7.03914 0.205446 7.41421 0.571142C7.78929 0.936838 8 1.43283 8 1.95C8 2.12239 7.92976 2.28772 7.80474 2.40962C7.67971 2.53152 7.51015 2.6 7.33333 2.6ZM4.66667 9.75C4.48986 9.75 4.32029 9.68152 4.19526 9.55962C4.07024 9.43772 4 9.27239 4 9.1V7.15C4 6.97761 4.07024 6.81228 4.19526 6.69038C4.32029 6.56848 4.48986 6.5 4.66667 6.5C4.84348 6.5 5.01305 6.56848 5.13807 6.69038C5.2631 6.81228 5.33333 6.97761 5.33333 7.15V9.1C5.33333 9.27239 5.2631 9.43772 5.13807 9.55962C5.01305 9.68152 4.84348 9.75 4.66667 9.75ZM7.33333 9.75C7.15652 9.75 6.98695 9.68152 6.86193 9.55962C6.73691 9.43772 6.66667 9.27239 6.66667 9.1V7.15C6.66667 6.97761 6.73691 6.81228 6.86193 6.69038C6.98695 6.56848 7.15652 6.5 7.33333 6.5C7.51015 6.5 7.67971 6.56848 7.80474 6.69038C7.92976 6.81228 8 6.97761 8 7.15V9.1C8 9.27239 7.92976 9.43772 7.80474 9.55962C7.67971 9.68152 7.51015 9.75 7.33333 9.75Z"
+                                                    fill="black" />
+                                            </svg></i>
+                                    </span>
+                                </div>
+
+
+
+                            </div>
+
+                            <div class="total-servico">
+                                <label for="">Total</label>
+                                <span class="valor-total">R$160,00</span>
+                            </div>
+                            <label for="" id="id-observacao">
+                                Observação
+                            </label>
+                            <div class="observacao">
+                                <input type="text" class="observacao-info" placeholder="Digite sua observação">
+                            </div>
+                            <div class="excluir">
+                                Excluir
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="agenda-data">
+                    <h1>Escolha a melhor data para o pet</h1>
+                    <div class="calendario">
+                        <div class="mes-ano">
+                            <i class="btn-prev-month"><svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 1.21576L6.78663 0L0 6.8L6.78663 13.6L8 12.3842L2.42674 6.8L8 1.21576Z"
+                                        fill="#B5BDC7" />
+                                </svg>
+                            </i>
+                            <h2 class="mes">Janeiro</h2>
+                            <i class="btn-next-month"><svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M-1.06285e-07 12.7842L1.21337 14L8 7.2L1.21337 0.400001L-1.08266e-06 1.61576L5.57326 7.2L-1.06285e-07 12.7842Z"
+                                        fill="#B5BDC7" />
+                                </svg>
+                            </i>
+                        </div>
+                        <div class="ano-atual">
+                            <h3 class="ano">
+                                2024
+
+                            </h3>
+                        </div>
+                        <table>
+                            <thead id="dias-semana">
+                                <tr>
+                                    <th class="final-semana">Dom</th> 
+                                    <th>Seg</th>
+                                    <th>Ter</th>
+                                    <th>Qua</th>
+                                    <th>Qui</th>
+                                    <th>Sex</th>
+                                    <th class="final-semana">Sab</th> 
+                                </tr>
+                            </thead>
+                            <tbody id="dias-mes">
+                                <tr>
+                                    <td class="mes-anterior">1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>9</td>
+                                    <td>10</td>
+                                    <td>11</td>
+                                    <td>12</td>
+                                    <td>13</td>
+                                    <td>14</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td>17</td>
+                                    <td>18</td>
+                                    <td>19</td>
+                                    <td>20</td>
+                                    <td>21</td>
+                                </tr>
+                                <tr>
+                                    <td>22</td>
+                                    <td>23</td>
+                                    <td>24</td>
+                                    <td>25</td>
+                                    <td>26</td>
+                                    <td>27</td>
+                                    <td>28</td>
+                                </tr>
+                                <tr class="ultima-linha">
+                                    <td>29</td>
+                                    <td>30</td>
+                                    <td>31</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td class="proximo-mes">3</td>
+                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                        <label for="" id="label-horario">Horários disponiveis</label>
+                        <table class="horario-disponivel">
+                            <tbody>
+                                <tr>
+                                    <td data-horario="08:00">08:00</td>
+                                    <td data-horario="09:00">09:00</td>
+                                    <td data-horario="11:00">11:00</td>
+                                </tr>
+                                <tr>
+                                    <td data-horario="12:00">12:00</td>
+                                    <td data-horario="14:00">14:00</td>
+                                    <td data-horario="15:00">15:00</td>
+                                </tr>
+                                <tr>
+                                    <td data-horario="17:00">17:00</td>
+                                    <td data-horario="18:00">18:00</td>
+                                    <td data-horario="19:00">19:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <div class="botoes-calendario">
+                            <button class="btn-cancelar">Cancelar</button>
+                            <button type="submit" class="btn-criar">Criar</button>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+
+            </div>
+    </section>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="/lib/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <script src="/main.js"></script>
+</body>
+
+</html>
