@@ -569,6 +569,8 @@
     justify-content: space-between;
     width: 326px;
     height: 482.3px;
+    border-left:1px solid #DED6D6 ;
+    padding-left: 16px;
     
    
 }
@@ -696,14 +698,14 @@ table tr td {
 .horario-disponivel{
    
     display: flex;
-    justify-content: space-a;
+    justify-content: space-between;
     align-items: center;
     padding-top: 4px;
 }
 
 .horario-disponivel tr td{
     display: flex;
-    justify-content: center;
+    justify-content: s;
     width:97.7px;
     height: 31.91px;
     border: 1px solid #CECECE;
@@ -715,6 +717,7 @@ table tr td {
     line-height: 18px;
     text-align: center;
     cursor: pointer;
+    margin-right: 4px;
 }
 
 .horario-disponivel td.selecionado{
