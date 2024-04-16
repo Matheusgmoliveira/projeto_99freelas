@@ -314,6 +314,7 @@
     
     display: none;
     border: 1px solid #DDDDDD;
+    box-shadow: 0px 51px 128px 0px #00000014;
     margin-top: 28px;
     width: 344px;
     height: 460px;

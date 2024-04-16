@@ -1,0 +1,296 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    
+    margin: 0 auto;
+    width: 1308px;
+    height: 1666px;
+    
+}
+
+.container-content{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 51px 128px 0px #00000014;
+    margin-top: 257px;
+    margin:0 auto;
+    width: 1164px;
+    height: 1335px;
+    
+    
+
+}
+
+h1{
+    position: absolute;
+    width: 140.45px;
+    height: 44px;
+    padding-top: 24px;
+    font-family: "Roboto",sans-serif;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 44px;
+    letter-spacing: -0.4px;
+    color:#4B4F54
+}
+.horarios{
+    display: flex;
+    justify-content: space-between;
+    width: 1249px;
+    height: 1190px;
+    margin-top: 16px;
+    
+    
+    
+    
+    
+}
+
+.horario-atendimento{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    
+    list-style: none;
+    margin-left:28px;
+    margin-right: 16px;
+    
+}
+.horario-atendimento label{
+    
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 13.78px;
+    line-height: 40px;
+    color: #4b4f54; ;
+}
+.primeiro-horario,.segundo-horario{
+    display: flex;
+    
+    align-items: center;
+    width: 323.75px;
+    height: 64px;
+    margin-top: 72px;
+    margin-bottom: 14px;
+    border-radius: 5px;
+    border: 2px solid #CCCCCC;
+    
+}
+
+.input-horario {
+    display: flex;
+    align-items: center;
+    width: 100px; /* Ajuste conforme necessário */
+    height: 30px;
+    border: 1px solid #CCCCCC;
+    margin-left: 16px;
+    margin-right: 4px;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: left;
+    color: #000000;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.input-horario:focus{
+    border-color: #33C899;
+}
+
+.date-time{
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    
+    align-items: center;
+    margin-left: 46px;
+    width: 64px;
+    height: 42px;
+    
+}
+
+.date-time-b{
+    display: flex;
+    position: absolute;
+    
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 184px;
+    width: 64px;
+    height: 42px;
+    
+}
+.top-traco{
+    
+    display: block;
+    width: 9.53px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 2px;
+    text-align: center;
+    margin-top: 1px;
+    margin-left: 13px ;
+    color: #000000;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    
+}
+
+.top-traco span{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.bottom-traco{
+    display: block;
+    width: 9.53px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 2px;
+    text-align: center;
+    margin-top: 1px;
+    margin-left: 13px ;
+    color: #000000;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.bottom-traco span{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.duplo-traco{
+    display: block;
+    width: 9.53px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 2px;
+    text-align: center;
+    margin-top: 1px;
+    margin-left: 2px ;
+    color: #000000;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.duplo-traco span{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.relogio{
+    display: flex;
+    justify-content: end;
+    
+    margin-left: 28px;
+}
+
+.btn-excluir{
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 12.5px;
+    border: none;
+    outline: none;
+    opacity: 40%;
+    background-color:#e4002b;
+     color:#fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 4px;
+    cursor: pointer;
+    
+}
+
+.btn-excluir:hover{
+    filter: brightness(0.8);
+}
+
+.primeiro-horario label,.segundo-horario label{
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    font-size: 13.78px;
+    line-height: 40px;
+    color:#4B4F54;
+    margin-left: 4px;
+}
+
+#domingo {
+    
+    margin-right: 28px;
+    padding-top: 58px;
+}
+
+#segunda{
+    padding-top: 58px;
+}
+#terca{
+    margin-right: 20px;
+    padding-top: 58px;
+}
+
+#quarta{
+    margin-right: 12px;
+    padding-top: 58px;
+}
+
+#quinta{
+    margin-right: 14px;
+    padding-top: 58px;
+}
+
+#sexta{
+    margin-right: 16px;
+    padding-top: 58px;
+}
+
+#sabado{
+    margin-right: 32px;
+    padding-top: 58px;
+}
+
+
+
+
+.btn-atualizar{
+    display: flex;
+    justify-content: center;
+    width: 1164px;
+    height: 59.98px;
+    margin-top: 10px;
+    
+}
+
+#button-update{
+    width: 320px;
+    height: 39.98px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: #5cb85c;
+    border: none;
+    outline: none;
+    font-family: "Roboto",sans-serif;
+    font-size: 15px;
+    line-height: 16px;
+    text-align: center;
+    color: #ffff;
+    cursor:pointer
+}
+
+#button-update:hover{
+    filter: brightness(0.8);
+}
+
