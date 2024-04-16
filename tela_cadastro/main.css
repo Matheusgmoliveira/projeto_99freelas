@@ -825,7 +825,14 @@ table tr td {
         width: 80%; /* Ocupar toda a largura do container */
          /* Remover restrição de largura máxima */
     }
+    .cadastro-cliente{
+        height:420px ;
+    }
+    .comanda-content{
+        
+        
+    }
     .agenda-data{
-        margin-top: 480px;
+        margin-top: 490px;
     }
 }  
