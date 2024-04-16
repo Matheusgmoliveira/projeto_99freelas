@@ -569,7 +569,7 @@
     display:block;
     justify-content: space-between;
     width: 326px;
-    height: 482.3px;
+    height: 599px;
     border-left:1px solid #DED6D6 ;
     padding-left: 16px;
     
@@ -803,3 +803,29 @@ table tr td {
     margin-right: 15px;
     
 }
+
+@media (max-width: 375px) {
+    .container{
+        max-width: 375px;
+    }
+    .cadastro-cliente{
+        display: flex;
+        justify-content: left;
+        max-width: 375px;
+        
+        margin-left: 0
+    }
+    .content {
+        display: block;
+        
+        justify-content: center;
+        max-width:375px ;
+        /* Empilhar itens verticalmente em telas menores */
+        /* Ajustar margem para telas menores */
+        width: 80%; /* Ocupar toda a largura do container */
+         /* Remover restrição de largura máxima */
+    }
+    .agenda-data{
+        margin-top: 480px;
+    }
+}  

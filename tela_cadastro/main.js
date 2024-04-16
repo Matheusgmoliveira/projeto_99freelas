@@ -111,8 +111,7 @@ $(document).ready(function() {
     
     
     
-    
-
+   
     
 
     $('.horario-disponivel td').click(function(){
