@@ -294,3 +294,47 @@ h1{
     filter: brightness(0.8);
 }
 
+@media  screen and (max-width:375px) {
+   
+    .container{
+        width: 375px;
+        
+    }
+    .container-content{
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+   .primeiro-horario,.segundo-horario{
+    margin-top: 1px;
+   }
+    .horarios {
+        display: block;
+        max-width: 375px;
+        width: 90%;
+        
+        margin-top: 120px;
+        
+    }
+
+    .horarios ul li{
+        display: block;
+        text-align: center;
+    }
+
+   
+
+    .btn-atualizar {
+        
+        display: block;
+        margin-top: 200px;
+    }
+
+    #button-update {
+        
+        
+        margin-left: 24px;
+    }
+}
