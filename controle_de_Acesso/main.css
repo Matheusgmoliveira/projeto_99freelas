@@ -17,15 +17,15 @@ body{
     align-items: center;
     width: 1061.66px;
     height: 699.42px;
-    background-color: red;
+    
 }
 
 .content{
     display: block;
-    justify-content: center;
+    
     width: 1061.66px;
     height: 516.73px;
-    background-color: blue;
+    
 }
 
 .info{
@@ -33,6 +33,7 @@ body{
     justify-content: center;
     flex-direction: column;
     padding-top: 24px;
+    margin-bottom: 20px;
     margin-left: 12px;
     width: 1031.66px;
     height: 279.66px;
@@ -44,7 +45,7 @@ body{
 h1{
     width: 446.39px;
     display: flex;
-    background-color: green;
+    
     
     font-family: "Roboto",sans-serif;
     font-weight: 300;
@@ -71,5 +72,355 @@ p{
     line-height: 22.68px;
     margin-left: 32px;
     color:#4B4F54
+}
+
+label{
+    
+    height: 44.5px;
+    margin-left: 20px;
+    padding-top: 14px;
+    font-family: "Roboto",sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.75px;
+    color:#4B4F54
+}
+
+.dados-controle{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 10px;
+    
+}
+.inputs{
+    display: flex;
+    align-items: center;
+    width: 204.48px;
+    height: 36.66px;
+    border:1px solid;
+    margin-left: 4px;
+    border-radius: 20px;
+    border-color: #0000001A;
+    
+    
+}
+
+input::placeholder{
+    padding-left: 14px;
+}
+
+#nome,#email{
+   
+    font-family: "Roboto",sans-serif;
+    background-color: transparent;
+     width: 200.48px;
+    font-size: 12px;
+    line-height: 16.73px;
+    color: #636C72;
+    margin-left: 2px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+
+
+ .labels{
+    display: flex;
+    justify-content: space-around;
+    width: 325px;
+    
+}
+
+.labels label{
+    width: 80.43px;
+    height: 19px;
+    width: 80.43px;
+    height: 19px;
+    margin-bottom: 16px;
+    padding-left: 8px;
+    font-family: "Roboto",sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+}
+.checkbox{
+    width: 325px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 32px;
+}
+.checkbox input{
+    display: flex;
+    margin-left: 18px;
+    padding-top: 24px;
+    background-color: blue;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 325px;
+    margin-left: 28px;
+} 
+
+#btn-cancelar{
+    width: 108.44px;
+    height: 39.98px;
+    text-align: center;
+    border-radius: 20px;
+    background-color:#e4002b ;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: "Roboto",sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+#btn-convidar{
+    width: 108.44px;
+    height: 39.98px;
+    text-align: center;
+    border-radius: 20px;
+    background-color:#5CB85C ;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: "Roboto",sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+#btn-cancelar:hover,#btn-convidar:hover{
+    opacity: 0.9;
+}
+
+.checkbox-info{
+    cursor: pointer;
+    background-color: red;
+}
+
+table{
+    display: flex;
+    flex-direction: column;
+    width: 1031.66px;
+    height: 109.98px;
+    margin-top: 36px;
+}
+
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+    height: 44.5px;
+    font-family: "Roboto",sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.75px;
+    color: #4B4F54;
+    border-bottom: 2px solid #ECEEEF;
+    border-top: 1px solid #ECEEEF;
+}
+
+#nome-cabecalho{
+   display: flex;
+   align-items: center;
+   padding-left: 12px;
+    width: 197.03px;
+    height: 44.5px;  
+}
+
+#sms-cabecalho{
+    display: flex;
+   align-items: center;
+   padding-left: 12px;
+    width: 115.33px;
+    height: 44.5px;  
+}
+#email-cabecalho{
+    display: flex;
+    align-items: center;
+    padding-left: 48px;
+    width: 206.7px;
+    height: 44.5px;  
+}
+#enviar-email-cabecalho{
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    width: 125.72px;
+    height: 44.5px;  
+}
+
+#enviar-push-cabecalho{
+    display: flex;
+   align-items: center;
+   padding-left: 12px;
+    width: 120.91px;
+    height: 44.5px;  
+}
+
+#cabecalho-convite{
+    width: 133.53px;
+    height: 44.5px;  
+}
+
+#btn-cabecalho{
+    width: 132.44px;
+    height: 44.5px;
+}
+tbody tr{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#check-sms{
+    width: 115.33px;
+    height: 64.98;
+    margin-left: 40px;
+}
+#check-email{
+    width: 125.72px;
+    height: 64.98; 
+}
+#check-push{
+    width: 115px;
+    height: 64.98;  
+    
+}
+#nome{
+    width: 197px;
+    height: 64.98px;
+}
+#convite{
+    width: 133.53px;
+    height: 64.98px;
+}
+#sms-checkbox-body{
+    width: 13px;
+    height: 13px;
+
+    padding-top: 13px;
+    border-radius: 2.5px;
+    background-color:#0075FF ;
+}
+#email-checkbox-body{
+    width: 13px;
+    height: 13px;
+    
+    padding-top: 13px;
+    border-radius: 2.5px;
+    background-color:#0075FF ;
+}
+#push-checkbox-body{
+    width: 13px;
+    height: 13px;
+    
+    padding-top: 13px;
+    border-radius: 2.5px;
+    background-color:#0075FF ;
+}
+
+#td-email{
+    
+    width:197.03px;
+    height: 64.98px;
+    word-wrap: break-word;
+   
+    
+    
+}
+#td-nome{
+    width:197.03px;
+    height: 64.98px;
+    
+}
+
+#nome-body{
+    width: 154.28px;
+    height: 19px;
+    margin-top: 13px;
+    margin-left: 14px;
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #4B4F54;
+}
+
+#email-body{
+    width: 163.03px;
+    height: 19px;
+    margin-top: 13px;
+    margin-left: 12px;
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #4B4F54;
+}
+#convite-body{
+    display: inline;
+    justify-content: left;
+    width: 96.89px;
+    height: 19px;
+    margin-top: 13px;
+    margin-left: 12px;
+    margin-right: 24px;
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #4B4F54;
+    
+}
+.btn-remover{
+    width: 108.44px;
+    height: 39.98px;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #e4002b;
+    font-family: "Roboto",sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+#btn-remover:hover{
+    opacity: 0.9;
+}
+
+tbody tr{
+    border-bottom: 2px solid #ECEEEF;
+}
+tbody tr td{
+    display: flex;
+    margin-top: px;
+    align-items: center;
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    font-size: 15.5px;
+    line-height: 18.16px;
+    color: #4B4F54;
+    
+    
+}
+
+#td-nome,#td-email,#convite{
+    padding-bottom: 40px;
+    
 }
 

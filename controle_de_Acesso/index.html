@@ -21,9 +21,61 @@
                 <p>Visualizar todos os gerentes deste estabelecimento</p>
                 <p>Remover gerentes do estabelecimento</p>
             </div>
-            <input type="text" placeholder="Nome" id="nome" required>
-            <input type="text" placeholder="Email do usuário" id="email">
-
+            <div class="dados-controle">
+                <label for="">Nome</label>
+                <div class="inputs">
+                    <input type="text" name="" id="nome" placeholder="Nome do usuário" required>
+                </div>
+                <label for="">Email</label>
+                <div class="inputs">
+                    <input type="text" name="" id="email" placeholder="Email do Usuario" required>
+                </div>
+            </div>
+            <div class="labels">
+                <label for="" id="enviar-sms">Enviar Sms</label>
+                <label for="" id="enviar-email">Enviar Email</label>
+                <label for="" id="enviar-push">Enviar Push</label>
+            </div>
+            <div class="checkbox">
+                <input class="checkbox-info" type="checkbox" name="" id="checkbox-sms">
+                
+                
+                <input class="checkbox-info" type="checkbox" name="" id="checkbox-email">
+                
+                
+                <input class="checkbox-info" type="checkbox" name="" id="checkbox-push">
+                
+            </div>
+            
+            <div class="buttons">
+                <button id="btn-cancelar">Cancelar</button>
+                <button id="btn-convidar">Convidar</button>
+            </div>
+            <table>
+                <thead>
+                    <tr class="cabecalho">
+                        <th id="nome-cabecalho">Nome</th>
+                        <th id="sms-cabecalho">Enviar Sms</th>
+                        <th id="enviar-email-cabecalho">Enviar Email</th>
+                        <th id="enviar-push-cabecalho">Enviar Push</th>
+                        <th id="cabecalho-convite"></th>
+                        <th id="email-cabecalho">Email</th>
+                        <th id="btn-cabecalho"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="td-nome"><label id="nome-body" for="" ></label></td>
+                        <td id="check-sms"></div></td>
+                        <td id="check-email"></div></td>
+                        <td id="check-push"></div></td>
+                        <td id="convite"><label id="convite-body" for=""></label></td>
+                        <td id="td-email"><label id="email-body" required></label></td>
+                        <td id="botao-body"></td>
+                        
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </body>
